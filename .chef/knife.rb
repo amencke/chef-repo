@@ -9,3 +9,8 @@ validation_client_name   "devops-pro-validator"
 validation_key           "#{current_dir}/devops-pro-validator.pem"
 chef_server_url          "https://api.chef.io/organizations/devops-pro"
 cookbook_path            ["#{current_dir}/../cookbooks"]
+cookbook_copyright	 "Arthur LTD"
+cookbook_license	 "apachev2"
+cookbook_email		 "arthur.mencke@gmail.com"
+
+
