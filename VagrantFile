@@ -7,6 +7,6 @@ config.vm.provision :chef_client do |chef| chef.provisioning_path = "/etc/chef"
 	chef.chef_server_url = "https://api.opscode.com/organizations/devops-pro"
 	chef.validation_key_path = ".chef/devops-pro-validator.pem"
 	chef.validation_client_name = "devops-pro-validator"
-	chef.node_name = "server"
+	chef.node_name = "devops-pro"
 	end
 end
