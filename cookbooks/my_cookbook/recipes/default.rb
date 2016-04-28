@@ -17,8 +17,7 @@
 # limitations under the License.
 #
 
-depends	"chef-client"
-depends "apt"
-depends "ntp"
-
+file '/tmp/greeting.txt' do
+         content 'Hello!'
+end
 
