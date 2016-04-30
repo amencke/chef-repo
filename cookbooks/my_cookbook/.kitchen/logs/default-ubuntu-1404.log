@@ -1,0 +1,49 @@
+I, [2016-04-30T22:22:47.171424 #44402]  INFO -- default-ubuntu-1404: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2016-04-30T22:22:47.171561 #44402]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2016-04-30T22:22:47.172326 #44402]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m0.00s).
+I, [2016-04-30T22:22:47.178812 #44402]  INFO -- default-ubuntu-1404: -----> Testing <default-ubuntu-1404>
+I, [2016-04-30T22:22:47.179039 #44402]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+E, [2016-04-30T22:22:48.164664 #44402] ERROR -- default-ubuntu-1404: Create failed on instance <default-ubuntu-1404>.
+E, [2016-04-30T22:22:48.164920 #44402] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2016-04-30T22:22:48.164941 #44402] ERROR -- default-ubuntu-1404: Class: Aws::EC2::Errors::AuthFailure
+E, [2016-04-30T22:22:48.164956 #44402] ERROR -- default-ubuntu-1404: Message: AWS was not able to validate the provided access credentials
+E, [2016-04-30T22:22:48.164971 #44402] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2016-04-30T22:22:48.164984 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-core-2.3.0/lib/seahorse/client/plugins/raise_response_errors.rb:15:in `call'
+E, [2016-04-30T22:22:48.164999 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-core-2.3.0/lib/aws-sdk-core/plugins/param_converter.rb:20:in `call'
+E, [2016-04-30T22:22:48.165013 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-core-2.3.0/lib/aws-sdk-core/plugins/response_paging.rb:26:in `call'
+E, [2016-04-30T22:22:48.165027 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-core-2.3.0/lib/seahorse/client/plugins/response_target.rb:21:in `call'
+E, [2016-04-30T22:22:48.165042 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-core-2.3.0/lib/seahorse/client/request.rb:70:in `send_request'
+E, [2016-04-30T22:22:48.165056 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-core-2.3.0/lib/seahorse/client/base.rb:207:in `block (2 levels) in define_operation_methods'
+E, [2016-04-30T22:22:48.165070 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-resources-2.3.0/lib/aws-sdk-resources/request.rb:24:in `call'
+E, [2016-04-30T22:22:48.165084 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-resources-2.3.0/lib/aws-sdk-resources/operations.rb:139:in `all_batches'
+E, [2016-04-30T22:22:48.165130 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-resources-2.3.0/lib/aws-sdk-resources/collection.rb:18:in `each'
+E, [2016-04-30T22:22:48.165147 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-resources-2.3.0/lib/aws-sdk-resources/collection.rb:18:in `each'
+E, [2016-04-30T22:22:48.165161 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/kitchen-ec2-1.0.0/lib/kitchen/driver/aws/standard_platform.rb:194:in `sort_by'
+E, [2016-04-30T22:22:48.165175 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/kitchen-ec2-1.0.0/lib/kitchen/driver/aws/standard_platform.rb:194:in `sort_images'
+E, [2016-04-30T22:22:48.165189 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/kitchen-ec2-1.0.0/lib/kitchen/driver/aws/standard_platform.rb:85:in `find_image'
+E, [2016-04-30T22:22:48.165203 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/kitchen-ec2-1.0.0/lib/kitchen/driver/ec2.rb:280:in `default_ami'
+E, [2016-04-30T22:22:48.165217 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/kitchen-ec2-1.0.0/lib/kitchen/driver/ec2.rb:74:in `block in <class:Ec2>'
+E, [2016-04-30T22:22:48.165231 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/lazy_hash.rb:136:in `proc_or_val'
+E, [2016-04-30T22:22:48.165261 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/lazy_hash.rb:77:in `[]'
+E, [2016-04-30T22:22:48.165278 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/kitchen-ec2-1.0.0/lib/kitchen/driver/ec2.rb:233:in `image'
+E, [2016-04-30T22:22:48.165293 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/kitchen-ec2-1.0.0/lib/kitchen/driver/ec2.rb:261:in `actual_platform'
+E, [2016-04-30T22:22:48.165307 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/kitchen-ec2-1.0.0/lib/kitchen/driver/ec2.rb:288:in `update_username'
+E, [2016-04-30T22:22:48.165321 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/kitchen-ec2-1.0.0/lib/kitchen/driver/ec2.rb:156:in `create'
+E, [2016-04-30T22:22:48.165335 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:449:in `public_send'
+E, [2016-04-30T22:22:48.165349 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:449:in `block in perform_action'
+E, [2016-04-30T22:22:48.165363 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:513:in `synchronize_or_call'
+E, [2016-04-30T22:22:48.165377 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-04-30T22:22:48.165391 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rbenv/versions/2.3.0/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-04-30T22:22:48.165405 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:477:in `action'
+E, [2016-04-30T22:22:48.165419 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:449:in `perform_action'
+E, [2016-04-30T22:22:48.165433 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:359:in `create_action'
+E, [2016-04-30T22:22:48.165447 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-04-30T22:22:48.165461 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:347:in `each'
+E, [2016-04-30T22:22:48.165476 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-04-30T22:22:48.165490 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:160:in `verify'
+E, [2016-04-30T22:22:48.165504 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:189:in `block in test'
+E, [2016-04-30T22:22:48.165518 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rbenv/versions/2.3.0/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-04-30T22:22:48.165532 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:185:in `test'
+E, [2016-04-30T22:22:48.165546 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/command.rb:176:in `public_send'
+E, [2016-04-30T22:22:48.165560 #44402] ERROR -- default-ubuntu-1404: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2016-04-30T22:22:48.165575 #44402] ERROR -- default-ubuntu-1404: ----------------------

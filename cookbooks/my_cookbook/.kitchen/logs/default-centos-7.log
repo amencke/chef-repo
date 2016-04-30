@@ -1,0 +1,46 @@
+I, [2016-04-30T21:56:26.166689 #42864]  INFO -- default-centos-7: -----> Cleaning up any prior instances of <default-centos-7>
+I, [2016-04-30T21:56:26.166848 #42864]  INFO -- default-centos-7: -----> Destroying <default-centos-7>...
+I, [2016-04-30T21:56:26.167561 #42864]  INFO -- default-centos-7: Finished destroying <default-centos-7> (0m0.00s).
+I, [2016-04-30T21:56:26.167739 #42864]  INFO -- default-centos-7: -----> Testing <default-centos-7>
+I, [2016-04-30T21:56:26.167825 #42864]  INFO -- default-centos-7: -----> Creating <default-centos-7>...
+I, [2016-04-30T21:56:26.774038 #42864]  INFO -- default-centos-7: Detected platform: centos version 7 on x86_64. Instance Type: t2.micro. Default username: centos (default).
+I, [2016-04-30T21:56:26.774224 #42864]  INFO -- default-centos-7: If you are not using an account that qualifies under the AWS
+free-tier, you may be charged to run these suites. The charge
+should be minimal, but neither Test Kitchen nor its maintainers
+are responsible for your incurred costs.
+
+E, [2016-04-30T21:56:26.896752 #42864] ERROR -- default-centos-7: Create failed on instance <default-centos-7>.
+E, [2016-04-30T21:56:26.897055 #42864] ERROR -- default-centos-7: ------Exception-------
+E, [2016-04-30T21:56:26.897083 #42864] ERROR -- default-centos-7: Class: Aws::EC2::Errors::OptInRequired
+E, [2016-04-30T21:56:26.897103 #42864] ERROR -- default-centos-7: Message: In order to use this AWS Marketplace product you need to accept terms and subscribe. To do so please visit http://aws.amazon.com/marketplace/pp?sku=aw0evgkw8e5c1q413zgy5pjce
+E, [2016-04-30T21:56:26.897123 #42864] ERROR -- default-centos-7: ------Backtrace-------
+E, [2016-04-30T21:56:26.897141 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-core-2.3.0/lib/seahorse/client/plugins/raise_response_errors.rb:15:in `call'
+E, [2016-04-30T21:56:26.897160 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-core-2.3.0/lib/aws-sdk-core/plugins/param_converter.rb:20:in `call'
+E, [2016-04-30T21:56:26.897179 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-core-2.3.0/lib/seahorse/client/plugins/response_target.rb:21:in `call'
+E, [2016-04-30T21:56:26.897197 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-core-2.3.0/lib/seahorse/client/request.rb:70:in `send_request'
+E, [2016-04-30T21:56:26.897216 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-core-2.3.0/lib/seahorse/client/base.rb:207:in `block (2 levels) in define_operation_methods'
+E, [2016-04-30T21:56:26.897235 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-resources-2.3.0/lib/aws-sdk-resources/request.rb:24:in `call'
+E, [2016-04-30T21:56:26.897254 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-resources-2.3.0/lib/aws-sdk-resources/operations.rb:41:in `call'
+E, [2016-04-30T21:56:26.897273 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-resources-2.3.0/lib/aws-sdk-resources/operations.rb:87:in `call'
+E, [2016-04-30T21:56:26.897292 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/aws-sdk-resources-2.3.0/lib/aws-sdk-resources/operation_methods.rb:19:in `block in add_operation'
+E, [2016-04-30T21:56:26.897311 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/kitchen-ec2-1.0.0/lib/kitchen/driver/aws/client.rb:77:in `create_instance'
+E, [2016-04-30T21:56:26.897330 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/kitchen-ec2-1.0.0/lib/kitchen/driver/ec2.rb:319:in `submit_server'
+E, [2016-04-30T21:56:26.897349 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/kitchen-ec2-1.0.0/lib/kitchen/driver/ec2.rb:170:in `create'
+E, [2016-04-30T21:56:26.897368 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:449:in `public_send'
+E, [2016-04-30T21:56:26.897388 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:449:in `block in perform_action'
+E, [2016-04-30T21:56:26.897426 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:513:in `synchronize_or_call'
+E, [2016-04-30T21:56:26.897448 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-04-30T21:56:26.897467 #42864] ERROR -- default-centos-7: /Users/amencke/.rbenv/versions/2.3.0/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-04-30T21:56:26.897486 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:477:in `action'
+E, [2016-04-30T21:56:26.897505 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:449:in `perform_action'
+E, [2016-04-30T21:56:26.897524 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:359:in `create_action'
+E, [2016-04-30T21:56:26.897542 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-04-30T21:56:26.897561 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:347:in `each'
+E, [2016-04-30T21:56:26.897580 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-04-30T21:56:26.897598 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:160:in `verify'
+E, [2016-04-30T21:56:26.897617 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:189:in `block in test'
+E, [2016-04-30T21:56:26.897636 #42864] ERROR -- default-centos-7: /Users/amencke/.rbenv/versions/2.3.0/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-04-30T21:56:26.897654 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/instance.rb:185:in `test'
+E, [2016-04-30T21:56:26.897673 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/command.rb:176:in `public_send'
+E, [2016-04-30T21:56:26.897691 #42864] ERROR -- default-centos-7: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2016-04-30T21:56:26.897710 #42864] ERROR -- default-centos-7: ----------------------

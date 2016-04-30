@@ -1,0 +1,31 @@
+I, [2016-04-30T21:39:55.128986 #42537]  INFO -- Kitchen: -----> Starting Kitchen (v1.7.3)
+E, [2016-04-30T21:39:55.129363 #42537] ERROR -- Kitchen: ------Exception-------
+E, [2016-04-30T21:39:55.129401 #42537] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2016-04-30T21:39:55.129426 #42537] ERROR -- Kitchen: Message: Kitchen YAML file /Users/amencke/dev/chef-repo/.kitchen.yml does not exist.
+E, [2016-04-30T21:39:55.129447 #42537] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-04-30T21:39:55.129468 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/loader/yaml.rb:74:in `read'
+E, [2016-04-30T21:39:55.129489 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/config.rb:149:in `data'
+E, [2016-04-30T21:39:55.129518 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/config.rb:128:in `suites'
+E, [2016-04-30T21:39:55.129535 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/config.rb:179:in `filter_instances'
+E, [2016-04-30T21:39:55.129551 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/config.rb:138:in `build_instances'
+E, [2016-04-30T21:39:55.129568 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/config.rb:114:in `instances'
+E, [2016-04-30T21:39:55.129584 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2016-04-30T21:39:55.129611 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2016-04-30T21:39:55.129632 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/command/test.rb:43:in `block in call'
+E, [2016-04-30T21:39:55.129653 #42537] ERROR -- Kitchen: /Users/amencke/.rbenv/versions/2.3.0/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-04-30T21:39:55.129673 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/command/test.rb:41:in `call'
+E, [2016-04-30T21:39:55.129694 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/cli.rb:56:in `perform'
+E, [2016-04-30T21:39:55.129714 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/cli.rb:227:in `test'
+E, [2016-04-30T21:39:55.129735 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2016-04-30T21:39:55.129757 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2016-04-30T21:39:55.129777 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/cli.rb:321:in `invoke_task'
+E, [2016-04-30T21:39:55.129798 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2016-04-30T21:39:55.129819 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2016-04-30T21:39:55.129840 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/bin/kitchen:13:in `block in <top (required)>'
+E, [2016-04-30T21:39:55.129861 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2016-04-30T21:39:55.130126 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/gems/test-kitchen-1.7.3/bin/kitchen:13:in `<top (required)>'
+E, [2016-04-30T21:39:55.130149 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/bin/kitchen:23:in `load'
+E, [2016-04-30T21:39:55.130169 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/bin/kitchen:23:in `<main>'
+E, [2016-04-30T21:39:55.130190 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-04-30T21:39:55.130224 #42537] ERROR -- Kitchen: /Users/amencke/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+E, [2016-04-30T21:39:55.130246 #42537] ERROR -- Kitchen: ----------------------
