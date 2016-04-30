@@ -18,6 +18,6 @@
 #
 
 file '/tmp/greeting.txt' do
-         content 'Hello!'
+         content node['my_cookbook']['greeting']
 end
 
