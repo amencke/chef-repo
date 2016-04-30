@@ -1,0 +1,182 @@
+I, [2016-04-30T20:57:04.116564 #40920]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2016-04-30T20:57:04.116725 #40920]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2016-04-30T20:57:04.117468 #40920]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m0.00s).
+I, [2016-04-30T20:57:04.123896 #40920]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2016-04-30T20:57:04.124089 #40920]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2016-04-30T20:57:05.747269 #40920]  INFO -- default-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2016-04-30T20:57:05.904182 #40920]  INFO -- default-ubuntu-1204: ==> default: Importing base box 'opscode-ubuntu-12.04'...
+I, [2016-04-30T20:57:14.061796 #40920]  INFO -- default-ubuntu-1204: [KProgress: 10%[KProgress: 20%[KProgress: 30%[KProgress: 40%[KProgress: 60%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2016-04-30T20:57:14.741239 #40920]  INFO -- default-ubuntu-1204: ==> default: Setting the name of the VM: kitchen-my_cookbook-default-ubuntu-1204_default_1462046234698_89609
+I, [2016-04-30T20:57:14.854308 #40920]  INFO -- default-ubuntu-1204: ==> default: Clearing any previously set forwarded ports...
+I, [2016-04-30T20:57:15.428507 #40920]  INFO -- default-ubuntu-1204: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2016-04-30T20:57:15.472548 #40920]  INFO -- default-ubuntu-1204: ==> default: Clearing any previously set network interfaces...
+I, [2016-04-30T20:57:15.519458 #40920]  INFO -- default-ubuntu-1204: ==> default: Preparing network interfaces based on configuration...
+I, [2016-04-30T20:57:15.519790 #40920]  INFO -- default-ubuntu-1204:     default: Adapter 1: nat
+I, [2016-04-30T20:57:15.571159 #40920]  INFO -- default-ubuntu-1204: ==> default: Forwarding ports...
+I, [2016-04-30T20:57:15.650178 #40920]  INFO -- default-ubuntu-1204:     default: 22 (guest) => 2200 (host) (adapter 1)
+I, [2016-04-30T20:57:15.796755 #40920]  INFO -- default-ubuntu-1204: ==> default: Booting VM...
+I, [2016-04-30T20:57:16.025178 #40920]  INFO -- default-ubuntu-1204: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2016-04-30T20:57:16.316390 #40920]  INFO -- default-ubuntu-1204:     default: SSH address: 127.0.0.1:2200
+I, [2016-04-30T20:57:16.316511 #40920]  INFO -- default-ubuntu-1204:     default: SSH username: vagrant
+I, [2016-04-30T20:57:16.316623 #40920]  INFO -- default-ubuntu-1204:     default: SSH auth method: private key
+I, [2016-04-30T20:57:31.864973 #40920]  INFO -- default-ubuntu-1204:     default: 
+I, [2016-04-30T20:57:31.865037 #40920]  INFO -- default-ubuntu-1204:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2016-04-30T20:57:31.865060 #40920]  INFO -- default-ubuntu-1204:     default: this with a newly generated keypair for better security.
+I, [2016-04-30T20:57:32.096489 #40920]  INFO -- default-ubuntu-1204:     default: 
+I, [2016-04-30T20:57:32.096590 #40920]  INFO -- default-ubuntu-1204:     default: Inserting generated public key within guest...
+I, [2016-04-30T20:57:32.155512 #40920]  INFO -- default-ubuntu-1204:     default: Removing insecure key from the guest if it's present...
+I, [2016-04-30T20:57:32.194160 #40920]  INFO -- default-ubuntu-1204:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2016-04-30T20:57:33.088915 #40920]  INFO -- default-ubuntu-1204: ==> default: Machine booted and ready!
+I, [2016-04-30T20:57:33.089363 #40920]  INFO -- default-ubuntu-1204: ==> default: Checking for guest additions in VM...
+I, [2016-04-30T20:57:33.131516 #40920]  INFO -- default-ubuntu-1204:     default: The guest additions on this VM do not match the installed version of
+I, [2016-04-30T20:57:33.131605 #40920]  INFO -- default-ubuntu-1204:     default: VirtualBox! In most cases this is fine, but in rare cases it can
+I, [2016-04-30T20:57:33.131638 #40920]  INFO -- default-ubuntu-1204:     default: prevent things such as shared folders from working properly. If you see
+I, [2016-04-30T20:57:33.131710 #40920]  INFO -- default-ubuntu-1204:     default: shared folder errors, please make sure the guest additions within the
+I, [2016-04-30T20:57:33.131742 #40920]  INFO -- default-ubuntu-1204:     default: virtual machine match the version of VirtualBox you have installed on
+I, [2016-04-30T20:57:33.131770 #40920]  INFO -- default-ubuntu-1204:     default: your host and reload your VM.
+I, [2016-04-30T20:57:33.131793 #40920]  INFO -- default-ubuntu-1204:     default: 
+I, [2016-04-30T20:57:33.132130 #40920]  INFO -- default-ubuntu-1204:     default: Guest Additions Version: 4.2.12
+I, [2016-04-30T20:57:33.132156 #40920]  INFO -- default-ubuntu-1204:     default: VirtualBox Version: 5.0
+I, [2016-04-30T20:57:33.132344 #40920]  INFO -- default-ubuntu-1204: ==> default: Setting hostname...
+I, [2016-04-30T20:57:35.677823 #40920]  INFO -- default-ubuntu-1204: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2016-04-30T20:57:37.879917 #40920]  INFO -- default-ubuntu-1204: [SSH] Established
+I, [2016-04-30T20:57:37.880289 #40920]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> created.
+I, [2016-04-30T20:57:37.881869 #40920]  INFO -- default-ubuntu-1204: Finished creating <default-ubuntu-1204> (0m33.76s).
+I, [2016-04-30T20:57:37.881956 #40920]  INFO -- default-ubuntu-1204: -----> Converging <default-ubuntu-1204>...
+I, [2016-04-30T20:57:37.882499 #40920]  INFO -- default-ubuntu-1204: Preparing files for transfer
+I, [2016-04-30T20:57:37.882589 #40920]  INFO -- default-ubuntu-1204: Preparing dna.json
+I, [2016-04-30T20:57:37.883125 #40920]  INFO -- default-ubuntu-1204: Resolving cookbook dependencies with Berkshelf 4.3.2...
+I, [2016-04-30T20:57:38.218619 #40920]  INFO -- default-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2016-04-30T20:57:38.233258 #40920]  INFO -- default-ubuntu-1204: Preparing solo.rb
+I, [2016-04-30T20:57:38.242627 #40920]  INFO -- default-ubuntu-1204: -----> Installing Chef Omnibus (install only if missing)
+I, [2016-04-30T20:57:38.243246 #40920]  INFO -- default-ubuntu-1204: Downloading https://www.chef.io/chef/install.sh to file /tmp/install.sh
+I, [2016-04-30T20:57:38.243691 #40920]  INFO -- default-ubuntu-1204: Trying wget...
+I, [2016-04-30T20:57:38.513363 #40920]  INFO -- default-ubuntu-1204: Download complete.
+I, [2016-04-30T20:57:38.525221 #40920]  INFO -- default-ubuntu-1204: ubuntu 12.04 x86_64
+I, [2016-04-30T20:57:38.525597 #40920]  INFO -- default-ubuntu-1204: Getting information for chef stable  for ubuntu...
+I, [2016-04-30T20:57:38.525965 #40920]  INFO -- default-ubuntu-1204: downloading https://omnitruck-direct.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=12.04&m=x86_64
+I, [2016-04-30T20:57:38.526259 #40920]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh.1231/metadata.txt
+I, [2016-04-30T20:57:38.526783 #40920]  INFO -- default-ubuntu-1204: trying wget...
+I, [2016-04-30T20:57:39.313796 #40920]  INFO -- default-ubuntu-1204: sha1	99f26627718a3ea4464ab48f534fb24e3e3e4719
+I, [2016-04-30T20:57:39.314324 #40920]  INFO -- default-ubuntu-1204: sha256	255c065a9d23f3dd0df3090206fe4d48451c7d0af0035c237bd21a7d28133f2f
+I, [2016-04-30T20:57:39.314805 #40920]  INFO -- default-ubuntu-1204: url	https://packages.chef.io/stable/ubuntu/12.04/chef_12.9.38-1_amd64.deb
+I, [2016-04-30T20:57:39.315438 #40920]  INFO -- default-ubuntu-1204: version	12.9.38
+I, [2016-04-30T20:57:39.317277 #40920]  INFO -- default-ubuntu-1204: downloaded metadata file looks valid...
+I, [2016-04-30T20:57:39.321632 #40920]  INFO -- default-ubuntu-1204: downloading https://packages.chef.io/stable/ubuntu/12.04/chef_12.9.38-1_amd64.deb
+I, [2016-04-30T20:57:39.321838 #40920]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh.1231/chef_12.9.38-1_amd64.deb
+I, [2016-04-30T20:57:39.322310 #40920]  INFO -- default-ubuntu-1204: trying wget...
+I, [2016-04-30T20:57:39.496978 #40920]  INFO -- default-ubuntu-1204: trying perl...
+I, [2016-04-30T20:57:39.514576 #40920]  INFO -- default-ubuntu-1204: trying python...
+I, [2016-04-30T20:58:05.170041 #40920]  INFO -- default-ubuntu-1204: Comparing checksum with sha256sum...
+I, [2016-04-30T20:58:05.560613 #40920]  INFO -- default-ubuntu-1204: 
+I, [2016-04-30T20:58:05.560971 #40920]  INFO -- default-ubuntu-1204: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-04-30T20:58:05.561091 #40920]  INFO -- default-ubuntu-1204: 
+I, [2016-04-30T20:58:05.561403 #40920]  INFO -- default-ubuntu-1204: You are installing an omnibus package without a version pin.  If you are installing
+I, [2016-04-30T20:58:05.563596 #40920]  INFO -- default-ubuntu-1204: on production servers via an automated process this is DANGEROUS and you will
+I, [2016-04-30T20:58:05.564085 #40920]  INFO -- default-ubuntu-1204: be upgraded without warning on new releases, even to new major releases.
+I, [2016-04-30T20:58:05.564566 #40920]  INFO -- default-ubuntu-1204: Letting the version float is only appropriate in desktop, test, development or
+I, [2016-04-30T20:58:05.564990 #40920]  INFO -- default-ubuntu-1204: CI/CD environments.
+I, [2016-04-30T20:58:05.565211 #40920]  INFO -- default-ubuntu-1204: 
+I, [2016-04-30T20:58:05.565562 #40920]  INFO -- default-ubuntu-1204: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-04-30T20:58:05.565768 #40920]  INFO -- default-ubuntu-1204: 
+I, [2016-04-30T20:58:05.566081 #40920]  INFO -- default-ubuntu-1204: Installing chef 
+I, [2016-04-30T20:58:05.566329 #40920]  INFO -- default-ubuntu-1204: installing with dpkg...
+I, [2016-04-30T20:58:05.691896 #40920]  INFO -- default-ubuntu-1204: Selecting previously unselected package chef.
+I, [2016-04-30T20:58:05.779341 #40920]  INFO -- default-ubuntu-1204: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53291 files and directories currently installed.)
+I, [2016-04-30T20:58:05.782518 #40920]  INFO -- default-ubuntu-1204: Unpacking chef (from .../chef_12.9.38-1_amd64.deb) ...
+I, [2016-04-30T20:58:10.921718 #40920]  INFO -- default-ubuntu-1204: Setting up chef (12.9.38-1) ...
+I, [2016-04-30T20:58:11.010689 #40920]  INFO -- default-ubuntu-1204: Thank you for installing Chef!
+I, [2016-04-30T20:58:11.083934 #40920]  INFO -- default-ubuntu-1204: Transferring files to <default-ubuntu-1204>
+I, [2016-04-30T20:58:12.257176 #40920]  INFO -- default-ubuntu-1204: Starting Chef Client, version 12.9.38
+I, [2016-04-30T20:58:13.839595 #40920]  INFO -- default-ubuntu-1204: Installing Cookbook Gems:
+I, [2016-04-30T20:58:13.840065 #40920]  INFO -- default-ubuntu-1204: Compiling Cookbooks...
+I, [2016-04-30T20:58:13.847581 #40920]  INFO -- default-ubuntu-1204: Recipe: minitest-handler::default
+I, [2016-04-30T20:58:13.848292 #40920]  INFO -- default-ubuntu-1204:   * chef_gem[ci_reporter] action nothing (skipped due to action :nothing)
+I, [2016-04-30T20:58:24.057051 #40920]  INFO -- default-ubuntu-1204:   * chef_gem[ci_reporter] action install
+I, [2016-04-30T20:58:24.057695 #40920]  INFO -- default-ubuntu-1204:     - install version 1.9.3 of package ci_reporter
+I, [2016-04-30T20:58:24.060428 #40920]  INFO -- default-ubuntu-1204:   * chef_gem[minitest] action nothing (skipped due to action :nothing)
+I, [2016-04-30T20:58:24.062809 #40920]  INFO -- default-ubuntu-1204:   * chef_gem[minitest] action install (skipped due to only_if)
+I, [2016-04-30T20:58:24.064474 #40920]  INFO -- default-ubuntu-1204:   * chef_gem[minitest-chef-handler] action nothing (skipped due to action :nothing)
+I, [2016-04-30T20:58:28.751558 #40920]  INFO -- default-ubuntu-1204:   * chef_gem[minitest-chef-handler] action install
+I, [2016-04-30T20:58:28.752274 #40920]  INFO -- default-ubuntu-1204:     - install version 1.1.0 of package minitest-chef-handler
+I, [2016-04-30T20:58:28.818116 #40920]  INFO -- default-ubuntu-1204: [2016-04-30T19:58:28+00:00] WARN: MissingCookbookDependency:
+I, [2016-04-30T20:58:28.818443 #40920]  INFO -- default-ubuntu-1204: Recipe `my_cookbook::default` is not in the run_list, and cookbook 'my_cookbook'
+I, [2016-04-30T20:58:28.818703 #40920]  INFO -- default-ubuntu-1204: is not a dependency of any cookbook in the run_list.  To load this recipe,
+I, [2016-04-30T20:58:28.819185 #40920]  INFO -- default-ubuntu-1204: first add a dependency on cookbook 'my_cookbook' in the cookbook you're
+I, [2016-04-30T20:58:28.819527 #40920]  INFO -- default-ubuntu-1204: including it from in that cookbook's metadata.
+I, [2016-04-30T20:58:28.819761 #40920]  INFO -- default-ubuntu-1204: 
+I, [2016-04-30T20:58:28.822217 #40920]  INFO -- default-ubuntu-1204:   Converging 7 resources
+I, [2016-04-30T20:58:28.823567 #40920]  INFO -- default-ubuntu-1204:   * chef_gem[ci_reporter] action nothing (skipped due to action :nothing)
+I, [2016-04-30T20:58:28.824491 #40920]  INFO -- default-ubuntu-1204:   * chef_gem[minitest] action nothing (skipped due to action :nothing)
+I, [2016-04-30T20:58:28.825524 #40920]  INFO -- default-ubuntu-1204:   * chef_gem[minitest-chef-handler] action nothing (skipped due to action :nothing)
+I, [2016-04-30T20:58:28.828050 #40920]  INFO -- default-ubuntu-1204:   * directory[delete minitest test location] action delete (up to date)
+I, [2016-04-30T20:58:28.831427 #40920]  INFO -- default-ubuntu-1204:   * directory[create minitest test location] action create
+I, [2016-04-30T20:58:28.835325 #40920]  INFO -- default-ubuntu-1204:     - create new directory /var/chef/minitest
+I, [2016-04-30T20:58:28.835900 #40920]  INFO -- default-ubuntu-1204:     - change mode from '' to '0775'
+I, [2016-04-30T20:58:28.836329 #40920]  INFO -- default-ubuntu-1204:     - change owner from '' to 'root'
+I, [2016-04-30T20:58:28.837503 #40920]  INFO -- default-ubuntu-1204:     - change group from '' to 'root'
+I, [2016-04-30T20:58:28.843661 #40920]  INFO -- default-ubuntu-1204:   * ruby_block[load_tests_and_register_handler] action run
+I, [2016-04-30T20:58:28.844273 #40920]  INFO -- default-ubuntu-1204:   Recipe: <Dynamically Defined Resource>
+I, [2016-04-30T20:58:28.846434 #40920]  INFO -- default-ubuntu-1204:     * directory[/var/chef/minitest/my_cookbook_test] action create
+I, [2016-04-30T20:58:28.847513 #40920]  INFO -- default-ubuntu-1204:       - create new directory /var/chef/minitest/my_cookbook_test
+I, [2016-04-30T20:58:28.850125 #40920]  INFO -- default-ubuntu-1204:     * directory[/var/chef/minitest/my_cookbook_test] action create (up to date)
+I, [2016-04-30T20:58:28.853965 #40920]  INFO -- default-ubuntu-1204:     * cookbook_file[/var/chef/minitest/my_cookbook_test/default_test.rb] action create
+I, [2016-04-30T20:58:28.859208 #40920]  INFO -- default-ubuntu-1204:       - create new file /var/chef/minitest/my_cookbook_test/default_test.rb
+I, [2016-04-30T20:58:28.859716 #40920]  INFO -- default-ubuntu-1204:       - update content in file /var/chef/minitest/my_cookbook_test/default_test.rb from none to 7a0b32
+I, [2016-04-30T20:58:28.860558 #40920]  INFO -- default-ubuntu-1204:       --- /var/chef/minitest/my_cookbook_test/default_test.rb	2016-04-30 19:58:28.065609097 +0000
+I, [2016-04-30T20:58:28.861452 #40920]  INFO -- default-ubuntu-1204:       +++ /var/chef/minitest/my_cookbook_test/.chef-default_test.rb20160430-1326-1sclp06	2016-04-30 19:58:28.065609097 +0000
+I, [2016-04-30T20:58:28.862054 #40920]  INFO -- default-ubuntu-1204:       @@ -1 +1,17 @@
+I, [2016-04-30T20:58:28.862531 #40920]  INFO -- default-ubuntu-1204:       +require 'minitest/spec'
+I, [2016-04-30T20:58:28.862925 #40920]  INFO -- default-ubuntu-1204:       +
+I, [2016-04-30T20:58:28.863295 #40920]  INFO -- default-ubuntu-1204:       +describe_recipe 'my_cookbook::default' do
+I, [2016-04-30T20:58:28.863730 #40920]  INFO -- default-ubuntu-1204:       +
+I, [2016-04-30T20:58:28.864655 #40920]  INFO -- default-ubuntu-1204:       +	describe "greeting file" do
+I, [2016-04-30T20:58:28.865111 #40920]  INFO -- default-ubuntu-1204:       +
+I, [2016-04-30T20:58:28.865139 #40920]  INFO -- default-ubuntu-1204:       +		it "creates the greeting file" do
+I, [2016-04-30T20:58:28.865423 #40920]  INFO -- default-ubuntu-1204:       +			file("/tmp/greeting.txt").must_exist
+I, [2016-04-30T20:58:28.865696 #40920]  INFO -- default-ubuntu-1204:       +		end
+I, [2016-04-30T20:58:28.866027 #40920]  INFO -- default-ubuntu-1204:       +
+I, [2016-04-30T20:58:28.866055 #40920]  INFO -- default-ubuntu-1204:       +		it "contains what's stored in the 'greeting' node attribute" do
+I, [2016-04-30T20:58:28.866076 #40920]  INFO -- default-ubuntu-1204:       +			file('/tmp/greeting.txt').must_include 'Ohai, Minitest!'
+I, [2016-04-30T20:58:28.866095 #40920]  INFO -- default-ubuntu-1204:       +		end
+I, [2016-04-30T20:58:28.866114 #40920]  INFO -- default-ubuntu-1204:       +	end
+I, [2016-04-30T20:58:28.867070 #40920]  INFO -- default-ubuntu-1204:       +end
+I, [2016-04-30T20:58:28.867102 #40920]  INFO -- default-ubuntu-1204:       +	   
+I, [2016-04-30T20:58:28.869179 #40920]  INFO -- default-ubuntu-1204:     - execute the ruby block load_tests_and_register_handler
+I, [2016-04-30T20:58:28.869566 #40920]  INFO -- default-ubuntu-1204: Recipe: my_cookbook::default
+I, [2016-04-30T20:58:28.871495 #40920]  INFO -- default-ubuntu-1204:   * file[/tmp/greeting.txt] action create
+I, [2016-04-30T20:58:28.872763 #40920]  INFO -- default-ubuntu-1204:     - create new file /tmp/greeting.txt
+I, [2016-04-30T20:58:28.873114 #40920]  INFO -- default-ubuntu-1204:     - update content in file /tmp/greeting.txt from none to 6a2bf1
+I, [2016-04-30T20:58:28.873670 #40920]  INFO -- default-ubuntu-1204:     --- /tmp/greeting.txt	2016-04-30 19:58:28.085619096 +0000
+I, [2016-04-30T20:58:28.874590 #40920]  INFO -- default-ubuntu-1204:     +++ /tmp/.chef-greeting.txt20160430-1326-1hlprir	2016-04-30 19:58:28.085619096 +0000
+I, [2016-04-30T20:58:28.875040 #40920]  INFO -- default-ubuntu-1204:     @@ -1 +1,2 @@
+I, [2016-04-30T20:58:28.876452 #40920]  INFO -- default-ubuntu-1204:     +Ohai, Minitest!
+I, [2016-04-30T20:58:28.877699 #40920]  INFO -- default-ubuntu-1204: 
+I, [2016-04-30T20:58:28.878527 #40920]  INFO -- default-ubuntu-1204: Running handlers:
+I, [2016-04-30T20:58:28.881756 #40920]  INFO -- default-ubuntu-1204: Run options: -v --seed 44024
+I, [2016-04-30T20:58:28.881980 #40920]  INFO -- default-ubuntu-1204: 
+I, [2016-04-30T20:58:28.882244 #40920]  INFO -- default-ubuntu-1204: # Running tests:
+I, [2016-04-30T20:58:28.882362 #40920]  INFO -- default-ubuntu-1204: 
+I, [2016-04-30T20:58:28.885701 #40920]  INFO -- default-ubuntu-1204: recipe::my_cookbook::default::greeting file#test_0001_creates the greeting file = 0.00 s = .
+I, [2016-04-30T20:58:28.888131 #40920]  INFO -- default-ubuntu-1204: recipe::my_cookbook::default::greeting file#test_0002_contains what's stored in the 'greeting' node attribute = 0.00 s = .
+I, [2016-04-30T20:58:28.888425 #40920]  INFO -- default-ubuntu-1204: 
+I, [2016-04-30T20:58:28.888700 #40920]  INFO -- default-ubuntu-1204: 
+I, [2016-04-30T20:58:28.889044 #40920]  INFO -- default-ubuntu-1204: Finished tests in 0.005947s, 336.3160 tests/s, 336.3160 assertions/s.
+I, [2016-04-30T20:58:28.889176 #40920]  INFO -- default-ubuntu-1204: 
+I, [2016-04-30T20:58:28.889478 #40920]  INFO -- default-ubuntu-1204: 2 tests, 2 assertions, 0 failures, 0 errors, 0 skips
+I, [2016-04-30T20:58:28.890110 #40920]  INFO -- default-ubuntu-1204:   - MiniTest::Chef::Handler
+I, [2016-04-30T20:58:28.890430 #40920]  INFO -- default-ubuntu-1204: Running handlers complete
+I, [2016-04-30T20:58:28.890986 #40920]  INFO -- default-ubuntu-1204: Chef Client finished, 7/16 resources updated in 16 seconds
+I, [2016-04-30T20:58:29.021697 #40920]  INFO -- default-ubuntu-1204: Finished converging <default-ubuntu-1204> (0m51.14s).
+I, [2016-04-30T20:58:29.021832 #40920]  INFO -- default-ubuntu-1204: -----> Setting up <default-ubuntu-1204>...
+I, [2016-04-30T20:58:29.022847 #40920]  INFO -- default-ubuntu-1204: Finished setting up <default-ubuntu-1204> (0m0.00s).
+I, [2016-04-30T20:58:29.022938 #40920]  INFO -- default-ubuntu-1204: -----> Verifying <default-ubuntu-1204>...
+I, [2016-04-30T20:58:29.023392 #40920]  INFO -- default-ubuntu-1204: Preparing files for transfer
+I, [2016-04-30T20:58:29.023914 #40920]  INFO -- default-ubuntu-1204: Transferring files to <default-ubuntu-1204>
+I, [2016-04-30T20:58:29.024874 #40920]  INFO -- default-ubuntu-1204: Finished verifying <default-ubuntu-1204> (0m0.00s).
+I, [2016-04-30T20:58:29.025375 #40920]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2016-04-30T20:58:31.647129 #40920]  INFO -- default-ubuntu-1204: ==> default: Forcing shutdown of VM...
+I, [2016-04-30T20:58:33.045967 #40920]  INFO -- default-ubuntu-1204: ==> default: Destroying VM and associated drives...
+I, [2016-04-30T20:58:33.311264 #40920]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> destroyed.
+I, [2016-04-30T20:58:33.312641 #40920]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m4.29s).
+I, [2016-04-30T20:58:33.312964 #40920]  INFO -- default-ubuntu-1204: Finished testing <default-ubuntu-1204> (1m29.20s).
