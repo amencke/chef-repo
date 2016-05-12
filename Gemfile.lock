@@ -119,6 +119,8 @@ GEM
       chef (>= 0.10)
       colorize
       git
+    knife-preflight (0.1.8)
+      chef (>= 0.10.4)
     libyajl2 (1.2.0)
     minitar (0.5.4)
     mixlib-authentication (1.4.0)
@@ -251,6 +253,7 @@ DEPENDENCIES
   kitchen-ec2
   kitchen-vagrant
   knife-playground
+  knife-preflight
   rspec
   test-kitchen
 
